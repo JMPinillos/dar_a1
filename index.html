@@ -1,23 +1,61 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
     <head>
-        <meta charset="utf 8"> 
         <title>Mi blog - Actividad 1 - DAR</title>
-        <link rel="stylesheet" href="style.css">
+
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Jose Manuel Pinillos"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que el sitio se adapte a cualquier tamaño de pantalla -->
+        
+        <link rel="stylesheet" href="css/style.css"><!-- Importar la hoja de estilos css -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One"> <!-- Importar tipografías desde google fonts -->
     </head>
     <body>
-        <div id="blog-container">
-            <div class="blog-entry">
-                <h2>Entrada 1</h2>
-                <p class="date">1 de enero de 2022</p>
-                <p>Contenido de la entrada 1.</p>
+
+		<!-- Start .top-bar -->
+        <div class="top-bar">
+            <h1>DAR</h1>
+            <h3>Actividad 1</h3>
+            <p class="subtitulo">Creación de un blog</p>
+            
+            <!-- Menú de navegación -->
+            <div class="navbar-header">
+                
+                <a class="navbar-brand nav-item" href="#header"><img src="images/logo.png" alt="logo" /></a>
             </div>
-            <div class="blog-entry">
-                <h2>Entrada 2</h2>
-                <p class="date">15 de enero de 2022</p>
-                <p>Contenido de la entrada 2.</p>
-            </div>
-        </div>
+        </div> <!-- End .header --> 
+          
+          <!-- Menú de navegación -->
+        <div class="top-bar">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-collapse-nav" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand nav-item" href="#header"><img src="images/logo.png" alt="logo" /></a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="site-collapse-nav">
+						<ul class="navbar-right pt-30">
+							<li><a href="https://maps.google.com/maps?q=C.+las+Fábricas,+3,+26280+Ezcaray,+La+Rioja" data-effect="mfp-3d-unfold" class="button sm embaded-popup">MOSTRAR MAPA</a></li>
+						</ul>
+						<ul class="nav nav-list navbar-nav navbar-right">
+                            <li><a class="nav-item" href="#about">Inicio</a></li>
+							<li><a class="nav-item" href="#floorplans">Fotos</a></li>
+							<li><a class="nav-item" href="#contact">Sobre mi</a></li>
+                            <li><a class="nav-item" href="#about">Contacto</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container -->
+			</nav>
+		</div><!-- .top-bar -->
     </body>
 </html>
