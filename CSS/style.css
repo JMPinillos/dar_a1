@@ -1,8 +1,15 @@
-.top-bar {
+header {
+    display: block;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #ffffff;
 	text-transform: uppercase;
 	font-weight: bold;
