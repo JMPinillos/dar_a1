@@ -3,7 +3,19 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
+}
+
+footer {
+    align-items: center;
+    text-align-last: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #007800;
+    :hover {
+        color: #007800;
+    }
 }
 
 .top-bar {
@@ -32,7 +44,7 @@ header {
         color: #007800;
     }
     :active {
-        color: rgb(255, 255, 255);
+        color: rgb(165, 80, 0);
     }
 }
 
@@ -61,10 +73,23 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
+    margin-right: px;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.social {
+    position:relative;
+    display: flex;
+    align-items: right;
+    list-style: none;
+    justify-content: right;
+    background: rgb(255, 255, 255);
+    color: rgb(119, 58, 0);
+    :hover {
+        color: #007800;
+    }
 }
 
 .inicio-section{
@@ -74,7 +99,7 @@ header {
 }
 
 .html-section{
-	padding: 75px 0 75px;
+	padding: 90px 0 75px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
 }
@@ -88,7 +113,7 @@ header {
 .desarrollo-section{
 	padding: 75px 0 75px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
+    text-align: center;
 }
 
 .alt-bg{
@@ -163,18 +188,50 @@ h4 {
 	font-weight:300;
 }
 
+
+
+.inicio-text{
+	line-height: 1.5em;
+}
+
 .inicio-text h1 span{
 	color:rgb(119, 58, 0);
+}
+
+.html-text{
+	line-height: 1.5em;
 }
 
 .html-text h2 span{
 	color:rgb(119, 58, 0);
 }
 
+.html-text li{
+	color:rgb(0, 0, 0);
+    margin-bottom:0;
+    list-style-type: none;
+}
+
+.css-text{
+	line-height: 1.5em;
+}
+
 .css-text h2 span{
 	color:rgb(119, 58, 0);
+}
+
+.css-text li{
+	color:rgb(0, 0, 0);
+    margin-bottom:0;
+    list-style-type: none;
+    
+}
+
+.desarrollo-text{
+	line-height: 1.5em;
 }
 
 .desarrollo-text h2 span{
 	color:rgb(119, 58, 0);
 }
+  
