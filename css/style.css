@@ -73,7 +73,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: px;
+    margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -93,7 +93,7 @@ footer {
 }
 
 .inicio-section{
-	padding: 90px 0 75px;
+	padding: 120px 0 75px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
