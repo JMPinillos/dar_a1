@@ -23,7 +23,7 @@
     <body>
 
 		<!-- Start Barra de menu -->
-        <header>
+        <header class="row">
             <nav class="top-bar">
                 <div class="section-title">
                     Actividad 1 - DAR
@@ -33,7 +33,7 @@
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#html">HTML</a></li>
                         <li><a href="#css">CSS</a></li>
-                        <li><a href="#desarrollo">Desarrollo</a></li>
+                        <li><a href="/desarrollo.html">Desarrollo</a></li>
                     </ul>
                 </div>                
                 <div>
@@ -64,8 +64,8 @@
 
         <!-- Start Seccion HTML -->
 		<div class="html-section" id="html">
-			<div class="container">
-				<div class="col-md-6">
+			<div class="container row">
+				<div class="col-md-6 left">
 					<div class="html-text">
 						<h2><span>HTML (<i>Hypertext Markup Language</i>)</span></h2>
                         <h4>Historia de HTML hasta HTML5</h4>
@@ -76,6 +76,16 @@
                             La evolución continuó con XHTML en 2000, que promovía una codificación más estricta y estructurada, fomentando la adopción de buenas prácticas de desarrollo web.                            
                             Finalmente, en 2014, HTML5 llegó al escenario y revolucionó la web. Esta versión trajo consigo una amplia gama de características innovadoras, como etiquetas semánticas (por ejemplo, &#60;header&#62;, &#60;nav&#62;, &#60;section&#62;, &#60;article&#62;), soporte integrado para audio y video, gráficos vectoriales con SVG y capacidades de almacenamiento local con Web Storage.
 						</p>
+					</div>
+				</div>
+                <div class="col-md-4 right">
+					<img src="images/html.png" alt="html_imagen"/>
+				</div>
+            </div><!-- .container -->   
+            
+            <div class="container row"> 		
+                <div class="col-md-10">
+					<div class="html-text">
                         <h4>Usos de HTML5</h4>
 						<ul>
                             <li><strong>Desarrollo de sitios web:</strong> HTML5 permite la creación de sitios web modernos con una estructura semántica, contenido multimedia enriquecido y una experiencia de usuario mejorada.</li>
@@ -87,18 +97,25 @@
                         </ul>
 					</div>
 				</div>	
-			</div><!-- .container -->
+            </div><!-- .container -->    
 		</div><!-- End Seccion HTML -->
 
         <!-- Start Seccion CSS -->
 		<div class="css-section alt-bg" id="css">
-			<div class="container">
+			<div class="container row">
 				<div class="col-md-6">
 					<div class="css-text">
 						<h2><span>CSS (<i>Cascading Style Sheets</i>)</span></h2>
                         <h4>Historia de CSS</h4>
 						<p>Cascading Style Sheets (CSS) es un lenguaje de diseño web que se ha desarrollado a lo largo de las décadas para mejorar la presentación de las páginas web. CSS se introdujo por primera vez en 1996 como una forma de separar la estructura (HTML) y la presentación (estilo) de las páginas web. La especificación CSS1 se publicó en 1996, y desde entonces ha habido varias versiones, incluyendo CSS2 en 1998 y CSS2.1 en 2011.
 						</p>
+					</div>
+				</div>	
+			</div><!-- .container -->
+
+            <div class="container row"> 		
+                <div class="col-md-6">
+					<div class="css-text">
                         <h4>CSS3 y sus características</h4>
                         <p>CSS3, la versión más reciente del lenguaje de estilo en cascada, ha revolucionado la forma en que diseñamos y presentamos páginas web. Entre sus innovadoras características se encuentran:
 						</p>
@@ -113,34 +130,13 @@
                         </ul>
 					</div>
 				</div>	
-			</div><!-- .container -->
+            </div><!-- .container -->
 		</div><!-- End Seccion CSS -->
 
-        <!-- Start Seccion Desarrollo -->
-		<div class="desarrollo-section" id="desarrollo">
-			<div class="container">
-				<div class="col-md-6">
-					<div class="desarrollo-text">
-                        
-						<h2><span>DESARROLLO</span></h2>
-						<h4>Proceso de desarrollo de la actividad</h4>
-						<p>Como en este caso se trata de hacer un blog estático utilizando únicamente HTML y CSS, no se van a considerar frameworks ni librerías externas.<br>
-                            Se utilizará un header que unifique la cabecera y un menu de navegación fijo, que permanezca continuamente visible, pues la navegación de nuestra seb se realizara por medio de secciones.
-                            Debajo del header se utilizará una barra de navegación que contendrá un menú con los típicos enlaces a Quién Soy y Contacto, además de uno que permita regresar al inicio de la página.
-                            A continuación, para pantallas grandes se crearán tres columnas del mismo tamaño, que contendrán las entradas del blog. En el caso de pantallas móviles, dichas columnas se ubicarán una debajo de la otra.
-                            Cada entrada que se muestra en el index contiene título, imagen y texto clicables.
-                            Por último, el footer contendrá información de derechos de autor, mes y año de creación.
-							</p>
-					</div>
-				</div>	
-			</div><!-- .container -->
-		</div><!-- End Seccion Desarrollo -->
-
         <footer >        
-            <div class="alt-bg">
+            <div>
                 Copyright © 2023 <a href="https://www.jmpinillos.es" target="_blank"><strong>JMPinillos</strong>.</a> Todos los derechos reservados.
             </div> 
         </footer> <!-- End .Barra de menu -->
-
     </body>
 </html>

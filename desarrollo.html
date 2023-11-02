@@ -8,49 +8,64 @@
         <meta name="Autor" content="Jose Manuel Pinillos"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">    
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Para que el sitio se adapte a cualquier tamaño de pantalla -->
-        
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#ffffff">
+
         <link rel="stylesheet" href="css/style.css"> <!-- Importar la hoja de estilos css -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One"> <!-- Importar tipografías desde google fonts -->
-        
-        <!-- quitamos el formato por defecto */ -->
-		<style> a {
-            text-decoration: none;
-        }</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     </head>
     
     <body>
 
 		<!-- Start Barra de menu -->
-        <header>
+        <header class="row">
             <nav class="top-bar">
                 <div class="section-title">
-                    <a>Actividad 1 - DAR</a>
+                    Actividad 1 - DAR
                 </div> 
-                
-                <ul class="nav-bar">
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#html">HTML</a></li>
-                    <li><a href="#css">CSS</a></li>
-                    <li><a href="#desarrollo">Desarrollo</a></li>
-                </ul>
-            </nav> <!-- End .Barra de menu -->
-        </header>
+                <div>                  
+                    <ul class="nav-bar container">
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/index.html/#html">HTML</a></li>
+                        <li><a href="/index.html/#css">CSS</a></li>
+                        <li><a href="#desarrollo">Desarrollo</a></li>
+                    </ul>
+                </div>                
+                <div>
+                    <ul class="social">
+                        <li><a title="LinedIn" href="https://www.linkedin.com/in/jmpinillos/" target="_blank"><img src="images/linkedin.png" alt="linkedin"/></a></li>
+                        <li><a title="GirHub" href="https://github.com/JMPinillos/" target="_blank"><img src="images/github.png" alt="github"/></a></li>
+                    </ul>
+                </div> 
+            </nav> 
+        </header> <!-- End .Barra de menu -->
 
         <!-- Start Seccion Inicio -->
-		<div class="alt-bg" >
+		<div class="desarrollo-section alt-bg" id="desarrollo">
 			<div class="container">
-				<div class="col-md-10">
+				<div class="col-md-6">
 					<div class="inicio-text">
-						<h1>Creación <span>de un blog</span></h2>
+						<h1>Creación <span>de un blog</span></h1>
 						<h4>¡Bienvenido a la actividad 1 de DAR!</h4>
 						<p>En el emocionante mundo de la ingeniería informática, el desarrollo de aplicaciones en red se erige como una disciplina fundamental. A medida que nuestras vidas se vuelven cada vez más interconectadas, la capacidad de diseñar y crear aplicaciones web y redes eficientes se convierte en un activo invaluable.<br><br>
-                            Este blog es un espacio dedicado a explorar las maravillas y desafíos de la asignatura de Desarrollo de Aplicaciones en Red. Aquí, compartiré mi viaje de aprendizaje, mis reflexiones y experiencias, y ofreceré información relevante sobre esta apasionante área de estudio.<br><br>
+                            Este blog es un espacio dedicado a explorar las maravillas y desafíos de la asignatura de Desarrollo de Aplicaciones en Red, donde compartiré mi viaje de aprendizaje, mis reflexiones y experiencias, además de ofrecer información relevante sobre esta apasionante área de estudio.<br><br>
                             Acompáñame mientras exploramos las complejidades de la creación de aplicaciones web, la optimización de redes y las tendencias emergentes en el desarrollo en línea. Descubriremos cómo los conceptos teóricos se traducen en soluciones prácticas y cómo las habilidades que adquirimos en esta asignatura pueden tener un impacto real en el mundo de la tecnología.<br><br>
                             Así que, sin más preámbulos, ¡vamos a sumergirnos en el fascinante universo del Desarrollo de Aplicaciones en Red y descubrir cómo podemos dar forma al futuro digital!
-							</p>
+						</p>
 					</div>
 				</div>	
 			</div><!-- .container -->
 		</div><!-- End Seccion Inicio -->
+
+        <footer >        
+            <div>
+                Copyright © 2023 <a href="https://www.jmpinillos.es" target="_blank"><strong>JMPinillos</strong>.</a> Todos los derechos reservados.
+            </div> 
+        </footer> <!-- End .Barra de menu -->
     </body>
 </html>
