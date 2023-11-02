@@ -276,4 +276,85 @@ h4 {
 .desarrollo-text h2 span{
 	color:rgb(119, 58, 0);
 }
+
+/* Adaptaciones necesarias para que los elementos se adapten a las pantallas medianas */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
   
+    .header {
+      padding: 50px;
+    }
+  
+    .header-post {
+      padding: 10px;
+    }
+  }
+  
+/* Adaptaciones necesarias para que los elementos se adapten a las pantallas de menos de 500px */
+@media (max-width: 500px) {
+    .header {
+        padding: 40px;
+    }
+  
+    .header-post {
+        padding: 0px
+    }
+  
+    .topnav a {
+        float: block;
+        display: right;
+    }
+  
+    .li {
+        float: right;
+        display: block;
+    }
+  
+    h1 {
+        font-size: 1.5em;
+    }
+  
+    h3 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+  
+    .subtitulo {
+        font-size: 0.8em;
+    }
+}
+  
+/* Adaptaciones necesarias para que los elementos se adapten a las pantallas de menos de 300px */
+  
+@media screen and (max-width:300px) {
+    .column {
+        width: 100%;
+        font-size: 0.8em;
+    }
+  
+    .header {
+        padding: 30px;
+    }
+  
+    .header-post {
+        padding: 10px;
+    }
+  
+    .topnav {
+        font-size: 0.8em;
+    }
+  
+    .post {
+        font-size: 0.8em;
+    }
+  
+    h3 {
+        font-size: 1.1em;
+    }
+  
+    h4 {
+        font-size: 1em;
+    }
+  }
