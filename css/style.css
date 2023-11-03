@@ -153,7 +153,6 @@ footer a{
 .desarrollo-section{
 	padding: 120px 0 75px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
 }
 
 .alt-bg{
@@ -273,7 +272,7 @@ h4 {
 	line-height: 1.5em;
 }
 
-.desarrollo-text h2 span{
+.desarrollo-text h1 span{
 	color:rgb(119, 58, 0);
 }
 
@@ -327,7 +326,6 @@ h4 {
 }
   
 /* Adaptaciones necesarias para que los elementos se adapten a las pantallas de menos de 300px */
-  
 @media screen and (max-width:300px) {
     .column {
         width: 100%;
