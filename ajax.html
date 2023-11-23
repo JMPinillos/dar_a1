@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="iso-8559-1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ajax.css" rel="stylesheet" type="text/css">
+		<title>ajax</title>
+    </head>
+
+<body>
+
+  <section class="layout">
+    <h1 class="url">URL</h1>
+    <div class="form">
+      <form action="#">
+        <input type="text" id="source" size="40" placeholder="API" />
+        <input type="button" id="send" value="Mostrar Contenidos" />
+      </form>
+    </div>
+
+    <div class="main">
+      <div class="contenido">
+        <h2>Contenidos del archivo:</h2>
+        <div id="contents"></div>
+
+      </div>
+
+      <div class="cabeceras">
+        <h2>Cabeceras HTTP de la respuesta del servidor:</h2>
+        <div id="headers"></div>
+
+      </div>
+
+      <div class="secundario">
+        <h2>Estados de la petición:</h2>
+        <div id="states"></div>
+
+      </div>
+
+      <div class="codigo">
+        <h2>Código de estado:</h2>
+        <div id="code"></div>
+
+      </div>
+
+    </div>
+  </section>
+      
+</body>
+
+    <script src="ajax.js"></script>
+    <footer class="footer">
+      <p>Desarrollado por: Jose Manuel Pinillos Rubio</p>
+    </footer>
+</html>

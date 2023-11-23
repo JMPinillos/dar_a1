@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 10px;
+}
+
+.layout {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 960px;
+    justify-content: center;
+    background-color: #305473;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 5px;
+    text-align: center;
+    color: #172940;
+}
+
+.form {
+    display: flex;
+    background-color: rgba(153, 205, 50, 0);
+    justify-content: center;
+}
+
+.main {
+    flex: 1; 
+    flex-wrap: wrap; 
+    background-color: rgba(255, 0, 0, 0);
+    padding: 5px;
+}
+
+.contenido {
+    flex: 1;
+}
+
+.cabeceras {
+    background-color: green;
+}
+
+.secundario {
+    flex: 1;
+    background-color: rgb(238, 24, 231);
+}
+
+.codigo {
+    background-color: rgb(230, 174, 21);
+}
+
+.contenido, .cabeceras, .secundario, .codigo {
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contenido, .secundario {
+    background-color: #F2E6D8;
+}
+
+.cabeceras, .codigo {
+    background-color: #f8f4ef;
+}
+
+#send {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#source {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    padding: 6px 12px;
+    text-align: left;
+    white-space: nowrap;
+    
+}
+
+.footer {
+    background-color: #305473db;
+    border-radius: 10px;
+    margin: auto auto;
+    padding: 3px;
+    margin-top: 5px;
+    max-width: 960px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+/* Adaptar para dispositivos móviles de menos de 350px */
+@media screen and (max-width: 350px)  {
+    .layout {
+        max-width: 100%;
+    }
+
+    .form {
+        flex: content;
+        width: fit-content;
+    }
+
+    #source {
+        max-width: 66%;
+    }
+
+    .footer {
+        max-width: 90%;
+    }
+}
+
+
+
