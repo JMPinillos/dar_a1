@@ -1,0 +1,30 @@
+body            
+{
+    margin:auto;
+    width:1024px;
+    padding:10px;
+    background-color:#ebebeb;
+    font-size:14px;
+    font-family:Verdana;
+    text-align: center;
+}
+
+.button {
+    margin:10px;
+}
+
+h1 {
+    font-size: 40px;
+    color:rgb(13, 112, 0);
+}
+
+h2 {
+    font-size: 30px;
+    color:rgb(65, 11, 11);
+}
+
+h3 {
+    font-size: 20px;
+    color:rgb(0, 72, 226);
+}
+
