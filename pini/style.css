@@ -43,6 +43,11 @@ h3 {
     color: #341f36;
 }
 
+.center {
+    padding-top: 10px;
+    text-align: center;
+}
+
 .main {
     flex: 1; 
     flex-wrap: wrap; 
@@ -59,7 +64,7 @@ h3 {
     border-radius: 10px;
 }
 
-#ejercicio1, #ejercicio3, #ejercicio4, #num1, #num2 {
+#ejercicio1, #ejercicio3, #ejercicio4, #num1, #num2, #code{
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -89,6 +94,46 @@ h3 {
     background-color: #3e8e41;
 }
 
+.topnav {
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+/* Estilo de los links del menú de navegación */
+.topnav a {
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.li {
+    float: center;
+    display: block;
+    color: #f2f2f2;
+}
+
+a:hover {
+    color: #00ff08;
+}
+
+a:active {
+    color: rgb(155, 177, 149);
+}
+
+
+.cuadros {
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(155, 177, 149);
+}
+  
 .header {
     background-color: rgb(9, 80, 0);
     border-radius: 10px;
