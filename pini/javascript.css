@@ -89,13 +89,26 @@ h3 {
     background-color: #3e8e41;
 }
 
+.header {
+    background-color: rgb(9, 80, 0);
+    border-radius: 10px;
+    margin: auto auto;
+    padding: 2px;
+    margin-bottom: 5px;
+    max-width: 980px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
 .footer {
     background-color: rgb(9, 80, 0);
     border-radius: 10px;
     margin: auto auto;
     padding: 2px;
     margin-top: 5px;
-    max-width: 960px;
+    max-width: 980px;
     text-align: center;
     color: #ffffff;
     font-weight: bold;

@@ -4,16 +4,19 @@ function ejer1() {
 
   // Comprobamos que se ha introducido algo en el formulario
   if(cadena == "") {
-    alert("Por favor, introduce algo de texto");
+    document.getElementById("resultado1").textContent = "Por favor, introduce algo de texto.";
+    document.getElementById("resultado1").style.color = "red";
   } else {
     // Eliminamos espacios y convertios a minúsculas
     cadena = cadena.replace(/\s/g, "").toLowerCase();
     
     // Comparamos la cadena original con la cadena invertida
     if(cadena === cadena.split("").reverse().join("")) {
-      alert("Es palindromo");
+      document.getElementById("resultado1").textContent = "Es palindromo.";
+      document.getElementById("resultado1").style.color = "black";
     }else{
-      alert("No es palindromo");
+      document.getElementById("resultado1").textContent = "No es palindromo.";
+      document.getElementById("resultado1").style.color = "black";
     }
   }
 }
@@ -25,18 +28,22 @@ function ejer2() {
 
   // Comprobamos que se ha introducido algo en el formulario
   if(num1 == "" || num2 == "") {
-    alert("Por favor, introduzca números");
+    document.getElementById("resultado2").textContent = "Por favor, introduzca números.";
+    document.getElementById("resultado2").style.color = "red";
   } else {   
 
     // Comparamos si los números son iguales
     if(num1 == num2) {
-      alert("Los números son iguales");
+      document.getElementById("resultado2").textContent = "Los números son iguales.";
+      document.getElementById("resultado2").style.color = "black";
     }else{
       // Comparamos los números y sacamos el mayor
       if(num1 < num2) {
-        alert(num2 + " es el número mayor");
+        document.getElementById("resultado2").textContent = num2 + " es el número mayor.";
+        document.getElementById("resultado2").style.color = "black";
       }else{
-        alert(num1 + " es el número mayor");
+        document.getElementById("resultado2").textContent = num1 + " es el número mayor.";
+        document.getElementById("resultado2").style.color = "black";
       }
     }
   }
@@ -55,7 +62,8 @@ function ejer3() {
   
   // Comprobamos que se ha introducido algo en el formulario
   if(cadena == "") {
-    alert("Por favor, introduce algo de texto");
+    document.getElementById("resultado3").textContent = "Por favor, introduce algo de texto.";
+    document.getElementById("resultado3").style.color = "red";
   } else {
        
     const vocales = "aeiou";
@@ -67,7 +75,8 @@ function ejer3() {
         texto = texto + letra;
       }
     }
-     alert(texto); 
+    document.getElementById("resultado3").textContent = texto;
+    document.getElementById("resultado3").style.color = "black";
     }
   }
 
@@ -83,7 +92,8 @@ function ejer4() {
 
   // Comprobamos que se ha introducido algo en el formulario
   if(cadena == "") {
-    alert("Por favor, introduce algo de texto");
+    document.getElementById("resultado4").textContent = "Por favor, introduce algo de texto.";
+    document.getElementById("resultado4").style.color = "red";
   } else {
        
     let a=0, e=0, i=0, o=0, u=0;
@@ -110,18 +120,25 @@ function ejer4() {
         u++;
       }
     }
-     alert("La 'A' aparece " + a + " veces.\n"+
-          "La 'E' aparece " + e + " veces.\n"+
-          "La 'I' aparece " + i + " veces.\n"+
-          "La 'O' aparece " + o + " veces.\n"+
-          "La 'U' aparece " + u + " veces.\n"); 
+    
+    if (a == 0 && e == 0 && i == 0 && o == 0 && u == 0) {
+      document.getElementById("resultado4").textContent = "El texto no contiene vocales.";
+      document.getElementById("resultado4").style.color = "black";
+    }else {
+    document.getElementById("resultado4").textContent = "La 'A' aparece " + a + " veces.\n"+
+    "La 'E' aparece " + e + " veces.\n"+
+    "La 'I' aparece " + i + " veces.\n"+
+    "La 'O' aparece " + o + " veces.\n"+
+    "La 'U' aparece " + u + " veces.\n";
+    document.getElementById("resultado4").style.color = "black";
     }
   }
+}
 
   // Función que elimina signos de acentuación
   let sinSignos = (function(){
-    let de = 'ÁÃÀÄÂÉËÈÊÍÏÌÎÓÖÒÔÚÜÙÛÑáãàäâéëèêíïìîóöòôúüùûñ',
-         a = 'AAAAAEEEEIIIIOOOOUUUUNaaaaaeeeeiiiioooouuuun',
+    let de = 'ÁÃÀÄÂÉËÈÊÍÏÌÎÓÖÒÔÚÜÙÛÑáãàäâéëèêíïìîóöòôúüùû',
+         a = 'AAAAAEEEEIIIIOOOOUUUUNaaaaaeeeeiiiioooouuuu',
         re = new RegExp('['+de+']' , 'ug');
 
     return texto =>
