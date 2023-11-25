@@ -126,8 +126,7 @@ a:active {
 
 .contenedor {
     width: 100%;
-    display: flex;
-    padding: auto;
+    display:flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
