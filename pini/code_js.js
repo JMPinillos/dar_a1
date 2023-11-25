@@ -4,8 +4,7 @@ function ejer1() {
 
   // Comprobamos que se ha introducido algo en el formulario
   if(cadena == "") {
-    document.getElementById("resultado1").textContent = "Por favor, introduce algo de texto.";
-    document.getElementById("resultado1").style.color = "red";
+    document.getElementById("resultado1").innerHTML = `<b style="color:red">Por favor, introduce algo de texto.</b>`;
   } else {
     // Eliminamos espacios y convertios a minúsculas
     cadena = cadena.replace(/\s/g, "").toLowerCase();
@@ -13,10 +12,8 @@ function ejer1() {
     // Comparamos la cadena original con la cadena invertida
     if(cadena === cadena.split("").reverse().join("")) {
       document.getElementById("resultado1").textContent = "Es palindromo.";
-      document.getElementById("resultado1").style.color = "black";
     }else{
       document.getElementById("resultado1").textContent = "No es palindromo.";
-      document.getElementById("resultado1").style.color = "black";
     }
   }
 }
@@ -28,22 +25,18 @@ function ejer2() {
 
   // Comprobamos que se ha introducido algo en el formulario
   if(num1 == "" || num2 == "") {
-    document.getElementById("resultado2").textContent = "Por favor, introduzca números.";
-    document.getElementById("resultado2").style.color = "red";
+    document.getElementById("resultado2").innerHTML = `<b style="color:red">Por favor, introduzca dos números.</b>`;
   } else {   
 
     // Comparamos si los números son iguales
     if(num1 == num2) {
       document.getElementById("resultado2").textContent = "Los números son iguales.";
-      document.getElementById("resultado2").style.color = "black";
     }else{
       // Comparamos los números y sacamos el mayor
       if(num1 < num2) {
-        document.getElementById("resultado2").textContent = num2 + " es el número mayor.";
-        document.getElementById("resultado2").style.color = "black";
+        document.getElementById("resultado2").innerHTML = `<b>${num2}</b> es el número mayor.`;
       }else{
-        document.getElementById("resultado2").textContent = num1 + " es el número mayor.";
-        document.getElementById("resultado2").style.color = "black";
+        document.getElementById("resultado2").innerHTML = `<b>${num1}</b> es el número mayor.`;
       }
     }
   }
@@ -62,8 +55,7 @@ function ejer3() {
   
   // Comprobamos que se ha introducido algo en el formulario
   if(cadena == "") {
-    document.getElementById("resultado3").textContent = "Por favor, introduce algo de texto.";
-    document.getElementById("resultado3").style.color = "red";
+    document.getElementById("resultado3").innerHTML = `<b style="color:red">Por favor, introduce algo de texto.</b>`;
   } else {
        
     const vocales = "aeiou";
@@ -72,11 +64,10 @@ function ejer3() {
     for (const letra of cadena) {
       
       if (vocales.includes(letra)) {
-        texto = texto + letra;
+        texto = texto + letra + " ";
       }
     }
-    document.getElementById("resultado3").textContent = texto;
-    document.getElementById("resultado3").style.color = "black";
+    document.getElementById("resultado3").innerHTML = `texto`;
     }
   }
 
@@ -92,8 +83,7 @@ function ejer4() {
 
   // Comprobamos que se ha introducido algo en el formulario
   if(cadena == "") {
-    document.getElementById("resultado4").textContent = "Por favor, introduce algo de texto.";
-    document.getElementById("resultado4").style.color = "red";
+    document.getElementById("resultado4").innerHTML = `<b style="color:red">Por favor, introduce algo de texto.</b>`;
   } else {
        
     let a=0, e=0, i=0, o=0, u=0;
@@ -123,14 +113,12 @@ function ejer4() {
     
     if (a == 0 && e == 0 && i == 0 && o == 0 && u == 0) {
       document.getElementById("resultado4").textContent = "El texto no contiene vocales.";
-      document.getElementById("resultado4").style.color = "black";
     }else {
-    document.getElementById("resultado4").textContent = "La 'A' aparece " + a + " veces.\n"+
-    "La 'E' aparece " + e + " veces.\n"+
-    "La 'I' aparece " + i + " veces.\n"+
-    "La 'O' aparece " + o + " veces.\n"+
-    "La 'U' aparece " + u + " veces.\n";
-    document.getElementById("resultado4").style.color = "black";
+    document.getElementById("resultado4").innerHTML = `La <b>A</b> aparece ${a} veces.<br/>
+    La <b>E</b> aparece ${e} veces.<br/>
+    La <b>I</b> aparece ${i} veces.<br/>
+    La <b>O</b> aparece ${o} veces.<br/>
+    La <b>U</b> aparece ${u} veces.`;
     }
   }
 }

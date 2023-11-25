@@ -124,6 +124,14 @@ a:active {
     color: rgb(155, 177, 149);
 }
 
+.contenedor {
+    width: 100%;
+    display: flex;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
 .cuadros {
     margin: 5px;
