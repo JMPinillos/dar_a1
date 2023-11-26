@@ -67,7 +67,7 @@ function ejer3() {
         texto = texto + letra + " ";
       }
     }
-    document.getElementById("resultado3").innerHTML = `texto`;
+    document.getElementById("resultado3").innerHTML = `<b>${texto}</b>`;
     }
   }
 
