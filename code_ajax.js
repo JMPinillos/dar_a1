@@ -69,7 +69,7 @@ function showStateCodes() {
 function showWEB() {
   
   document.getElementById("web").style.display = "none";
-  document.getElementById("html").style.display = "inline"
+  document.getElementById("html").style.display = "inline";
   
   
   if(request.readyState == 4 && request.status == 200) {

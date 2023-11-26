@@ -47,11 +47,10 @@ function ejer3() {
   let cadena = document.getElementById("ejercicio3").value;
   
   // Eliminamos signos de acentuación de las vocales
-  cadena=sinSignos(cadena);
+  cadena = sinSignos(cadena);
   
   // Eliminamos espacios y convertios a minúsculas 
   cadena = cadena.replace(/\s/g, "").toLowerCase();
-  cadena.split("");
   
   // Comprobamos que se ha introducido algo en el formulario
   if(cadena == "") {
@@ -68,8 +67,8 @@ function ejer3() {
       }
     }
     document.getElementById("resultado3").innerHTML = `<b>${texto}</b>`;
-    }
   }
+}
 
 function ejer4() {
   // Capturamos la cadena del campo de texto
@@ -125,10 +124,12 @@ function ejer4() {
 
   // Función que elimina signos de acentuación
   let sinSignos = (function(){
+    // Definición de caracteres acentuados y sus equivalentes sin acento
     let de = 'ÁÃÀÄÂÉËÈÊÍÏÌÎÓÖÒÔÚÜÙÛÑáãàäâéëèêíïìîóöòôúüùû',
          a = 'AAAAAEEEEIIIIOOOOUUUUNaaaaaeeeeiiiioooouuuu',
         re = new RegExp('['+de+']' , 'ug');
 
+    // Retorno de la función que realiza el reemplazo de caracteres
     return texto =>
         texto.replace(
             re, 
