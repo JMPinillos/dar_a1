@@ -336,7 +336,9 @@ function ejer4() {
 
    Aquí, la función `sinSignos()` se utiliza para eliminar los signos diacríticos (tildes y diéresis) de la cadena. Esto se logra mediante una función de reemplazo que utiliza expresiones regulares para mapear caracteres acentuados a sus equivalentes sin acento.
 
-   La función `sinSignos()` se detalla más adelante.
+   La función `sinSignos()` se detalla [más adelante](#Funcion_sinSignos()).
+
+   <a name='Funcion_sinSignos'>asdfdasf</a>
 
    
 
@@ -413,7 +415,9 @@ function ejer4() {
 
 
 
-### Función `sinSignos()`
+[Titulo del artículo](#item1)
+
+### [Función `sinSignos()`](#Funcion_sinSignos())
 
 La función `sinSignos()` se define utilizando una expresión de función inmediatamente invocada (IIFE, por sus siglas en inglés) para crear un ámbito cerrado. Esto ayuda a encapsular las variables locales y evitar contaminar el ámbito global.
 
