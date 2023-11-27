@@ -1,9 +1,5 @@
 # Tecnologías JavaScript y AJAX
 
-[TOC]
-
-
-
 ## Introducción
 
 En el ámbito de la Ingeniería Informática, el desarrollo de aplicaciones en red desempeña un papel fundamental, exigiendo la integración de tecnologías modernas para garantizar un rendimiento eficiente y una experiencia del usuario óptima. En este contexto, el presente trabajo se centra en la aplicación práctica de los conocimientos adquiridos en las tecnologías JavaScript y AJAX, dos pilares esenciales en el desarrollo web contemporáneo.
