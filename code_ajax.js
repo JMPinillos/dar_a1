@@ -49,7 +49,7 @@ function showContent() {
   
   if(request.readyState == 4 && request.status == 200) {
     let contents = document.getElementById('contenido'); // Obtiene el elemento
-    contents.textContent = request.responseText // Muestra el contenido
+    contents.textContent = request.responseText; // Muestra el contenido
     document.getElementById("web").style.display = "inline";  
     showHeaders();
     showStateCodes();
