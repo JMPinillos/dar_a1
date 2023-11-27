@@ -1,5 +1,9 @@
 # Tecnologías JavaScript y AJAX
 
+[TOC]
+
+
+
 ## Introducción
 
 En el ámbito de la Ingeniería Informática, el desarrollo de aplicaciones en red desempeña un papel fundamental, exigiendo la integración de tecnologías modernas para garantizar un rendimiento eficiente y una experiencia del usuario óptima. En este contexto, el presente trabajo se centra en la aplicación práctica de los conocimientos adquiridos en las tecnologías JavaScript y AJAX, dos pilares esenciales en el desarrollo web contemporáneo.
@@ -338,8 +342,6 @@ function ejer4() {
 
    La función `sinSignos()` se detalla [más adelante](#Funcion_sinSignos()).
 
-   <a name='Funcion_sinSignos'>asdfdasf</a>
-
    
 
 3. **Eliminación de espacios y conversión a minúsculas de la cadena**:
@@ -413,11 +415,9 @@ function ejer4() {
 
    Finalmente, el contenido del elemento con el id "resultado4" se actualiza para mostrar la frecuencia de cada vocal en la cadena, y si no se encontraron vocales, se muestra un mensaje indicando que el texto no contiene vocales.
 
+[section](#item1)
 
-
-[Titulo del artículo](#item1)
-
-### [Función `sinSignos()`](#Funcion_sinSignos())
+### [Función `sinSignos()`](#item1)
 
 La función `sinSignos()` se define utilizando una expresión de función inmediatamente invocada (IIFE, por sus siglas en inglés) para crear un ámbito cerrado. Esto ayuda a encapsular las variables locales y evitar contaminar el ámbito global.
 
