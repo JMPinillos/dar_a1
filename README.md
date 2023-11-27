@@ -10,6 +10,13 @@ Posteriormente, trabajamos con AJAX (*Asynchronous* JavaScript and XML), una tec
 
 La implementación de estos conceptos se ha llevado a cabo en una página web diseñada con HTML y CSS, proporcionando no solo una funcionalidad robusta sino también una interfaz atractiva y amigable para el usuario. A lo largo de esta actividad, detallaré cada ejercicio resuelto, exponiendo el código y los resultados obtenidos, con el objetivo de ofrecer una visión completa de nuestro proceso de desarrollo y aprendizaje.
 
+Para poder interactuar con la WEB creada se puede visitar el siguiente enlace:
+- [WEB JavaScript y AJAX](https://jmpinillos.github.io/dar_a2/index.html)
+
+También se puede visitar el repositorio completo el cual contiene todos los detalles:
+
+- [GitHub/dar_a2](https://github.com/JMPinillos/dar_a2)
+
 
 
 ## JavaScript
