@@ -68,23 +68,22 @@ function showStateCodes() {
 
 function showWEB() {
   
-  document.getElementById("web").style.display = "none";
-  document.getElementById("html").style.display = "inline";
-  
+  document.getElementById("web").style.display = "none"; //Oculta el botón WEB
+  document.getElementById("html").style.display = "inline"; //Muestra el botón HTML
   
   if(request.readyState == 4 && request.status == 200) {
     let contents = document.getElementById('contenido'); // Obtiene el elemento
-      contents.innerHTML = request.responseText // Muestra el contenido
+      contents.innerHTML = request.responseText; // Muestra el contenido
   }
 }
 
 function showHTML() {
   
-  document.getElementById("html").style.display = "none";
-  document.getElementById("web").style.display = "inline";
+  document.getElementById("html").style.display = "none"; //Oculta el botón HTML
+  document.getElementById("web").style.display = "inline"; //Muestra el botón WEB
   
   if(request.readyState == 4 && request.status == 200) {
     let contents = document.getElementById('contenido'); // Obtiene el elemento
-      contents.textContent = request.responseText // Muestra el contenido
+      contents.textContent = request.responseText; // Muestra el contenido
   }
 }

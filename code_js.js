@@ -123,16 +123,16 @@ function ejer4() {
 }
 
   // Función que elimina signos de acentuación
-  let sinSignos = (function(){
-    // Definición de caracteres acentuados y sus equivalentes sin acento
-    let de = 'ÁÃÀÄÂÉËÈÊÍÏÌÎÓÖÒÔÚÜÙÛÑáãàäâéëèêíïìîóöòôúüùû',
-         a = 'AAAAAEEEEIIIIOOOOUUUUNaaaaaeeeeiiiioooouuuu',
-        re = new RegExp('['+de+']' , 'ug');
+let sinSignos = (function(){
+  // Definición de caracteres acentuados y sus equivalentes sin acento
+  let de = 'ÁÃÀÄÂÉËÈÊÍÏÌÎÓÖÒÔÚÜÙÛÑáãàäâéëèêíïìîóöòôúüùû',
+       a = 'AAAAAEEEEIIIIOOOOUUUUNaaaaaeeeeiiiioooouuuu',
+      re = new RegExp('['+de+']' , 'ug');
 
-    // Retorno de la función que realiza el reemplazo de caracteres
-    return texto =>
-        texto.replace(
-            re, 
-            match => a.charAt(de.indexOf(match))
-        );
+  // Retorno de la función que realiza el reemplazo de caracteres
+  return texto =>
+    texto.replace(
+      re, 
+      match => a.charAt(de.indexOf(match))
+    );
 })();
