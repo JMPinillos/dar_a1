@@ -13,10 +13,6 @@ La implementación de estos conceptos se ha llevado a cabo en una página web di
 Para poder interactuar con la WEB creada se puede visitar el siguiente enlace:
 - [WEB JavaScript y AJAX](https://jmpinillos.github.io/dar_a2/index.html)
 
-También se puede visitar el repositorio completo el cual contiene todos los detalles:
-
-- [GitHub/dar_a2](https://github.com/JMPinillos/dar_a2)
-
 
 
 ## JavaScript
