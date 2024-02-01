@@ -893,4 +893,3 @@ Esta actividad no solo ha sido una oportunidad para aplicar los conceptos teóri
 
 
 <center>by <strong>Jose Manuel Pinillos</strong></center>
-
